@@ -1,4 +1,5 @@
 import './style/style.css'
+import './blocks.js'
 
 
 const Share = {
@@ -52,7 +53,7 @@ document.getElementById('vk').addEventListener('click', Share.vkontakte)
 window.onload = function() {
     let link = 'https://storage.googleapis.com/sonyland/projector2021/uploads/image/file/1/final.jpg'
     let http = new XMLHttpRequest();
-    
+
     http.onreadystatechange = function() {
         if (http.status == 200 && http.readyState == 4) {
             console.log(http.response)

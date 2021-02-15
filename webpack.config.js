@@ -9,9 +9,18 @@ module.exports = {
   module: {
       rules: [
         {
-            test: /\.css$/i,
-            use: ['style-loader', 'css-loader']
-        }
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader']
+        },
+        {
+          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          use: ['url-loader?limit=100000']
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+        },
+        
       ]
   }
 };
