@@ -9,26 +9,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-10 d-flex align-items-center">
+        <div class="row mx-5 mt-4">
+            <div class="col-10 d-flex align-items-center flex-wrap">
                 <div>
-                    <p class="text-success fs-1 lh-sm fw-bold">Проверим,</p>
-                    <p class="text-success fs-6 lh-sm">насколько ты "эко"?</p>
+                    <p class="text-success fs-1 lh-sm fw-bold header-text-main">Проверим,</p>
+                    <p class="text-success fs-6 lh-sm header-text-sub">насколько ты "эко"?</p>
                 </div>
                 <div class="px-4">
-                    <button type="button" class="btn btn-success">Начать<span class="ghost"></span></button>
+                    <button type="button" class="btn-lg btn-success mt-2">Начать<span class="ghost"></span></button>
                 </div>
             </div>
-            <div class="col-2 d-flex align-items-center justify-content-end">
+            <div class="col-2 d-flex mt-2">
                 <img src="https://www.pngitem.com/pimgs/m/461-4618525_ig-small-instagram-logo-2019-hd-png-download.png" class="icon-link" alt="...">
                 <img src="https://i.pinimg.com/originals/80/2a/19/802a19bdfaec18f714d44db59b456a6e.png" class="icon-link" alt="...">
             </div>
         </div>
     </div>
     
-    <div class="container mt-4">
+    <div class="container-fluid mt-4">
         <div class="row">
             <div class="col-4 col-xl-2">
                 <div class="card">
@@ -95,89 +94,94 @@
             <div class="col-xl-4 col-md-4 col-sm-6">
                 <div class="card" id="block-1">
                     <div class="card-body block p-0">
-                      <a href="#">
                         <img src="../images/draft page elements/block1.jpg" class="card-img-top" alt="...">
-                      </a>
                     </div>
                   </div>
             </div>
             <div class="col-xl-4 col-md-4 col-sm-6">
                 <div class="card" id="block-2">
                     <div class="card-body block p-0">
-                      <a href="#">
-                        <img src="../images/draft page elements/block2.jpg" class="card-img-top" alt="...">
+                        <img id="block-2-background" src="../images/draft page elements/block2.jpg" class="card-img-top" alt="...">
+                        <p id="hover-bees">Сохранение природных экосистем</p>
                         <div class="white-box">
                           <a href="#">
                             <img class="tiktok-icon-block" src="../images/icons/tiktok.png" alt="..." target="_blank">
                           </a>
                           <p class="block-text grayish">С какой эмоджи у тебя ассоциируется пчела (кликни)</p>
-                          <span class="emoji item-1">☺️</span><span class="emoji item-2">🤮</span><span class="emoji item-3">❤️</span></br>
-                          <span class="emoji item-4">😱</span><span class="emoji item-5">😛</span><span class="emoji item-6">👍</span>
+                          <div class="emoji">
+                            <span class="emoji-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">☺️</span><span class="emoji-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">🤮</span><span class="emoji-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">❤️</span></br>
+                            <span class="emoji-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">😱</span><span class="emoji-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">😛</span><span class="emoji-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">👍</span>
+                          </div>
                         </div>
-                      </a>
                     </div>
                   </div>
             </div>
             <div class="col-xl-4 col-md-4 col-sm-6">
                 <div class="card">
                     <div class="card-body block p-0">
-                      <a href="#">
                         <img src="../images/draft page elements/block3.jpg" class="card-img-top" alt="...">
-                      </a>
                     </div>
                   </div>
             </div>
             <div class="col-xl-4 col-md-4 col-sm-6">
                 <div class="card">
                     <div class="card-body block p-0">
-                      <a href="#">
                         <img src="../images/draft page elements/block4.jpg" class="card-img-top" alt="...">
-                      </a>
                     </div>
                   </div>
             </div>
             <div class="col-xl-4 col-md-4 col-sm-6">
                 <div class="card">
                     <div class="card-body block p-0">
-                      <a href="#">
                         <img src="../images/draft page elements/block5.jpg" class="card-img-top" alt="...">
-                      </a>
                     </div>
                   </div>
             </div>
             <div class="col-xl-4 col-md-4 col-sm-6">
                 <div class="card">
                     <div class="card-body block p-0">
-                      <a href="#">
                         <img src="../images/draft page elements/block6.jpg" class="card-img-top" alt="...">
-                      </a>
                     </div>
                   </div>
             </div>
         </div>
     </div>
 
-    <h2 class="text-start px-4 pt-4 fs-1 grayish">Поделись у себя</h2>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex">
+      <h2 class="text-start px-4 fs-1 grayish">Поделись у себя</h2>
+
+      <div class="d-flex justify-content-center">
         <a id="vk" href="#"><img src="https://www.pngitem.com/pimgs/m/461-4618525_ig-small-instagram-logo-2019-hd-png-download.png" class="icon-link" alt="..."></a>
         <a href=""><img src="https://i.pinimg.com/originals/80/2a/19/802a19bdfaec18f714d44db59b456a6e.png" class="icon-link" alt="..."></a>     
+      </div>
     </div>
-
+    
     <h2 class="text-start px-4 pt-4 fs-1 grayish">Выбери награду</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col mt-3 d-flex flex-column align-items-end">
-                <button type="button" class="btn btn-success mb-3">Попасть в другой город</button>
-                <button type="button" class="btn btn-success">Подарок от партнера</button>
-            </div>
-            <div class="col mt-3 d-flex flex-column align-items-start">
-                <button type="button" class="btn btn-success mb-3">Стикеры телеграм</button>
-                <button type="button" class="btn btn-success disabled">Награда заблокирована</button>
-            </div>
-        </div>
+    
+    <div class="container-fluid">
+    <div class="d-flex justify-content-center flex-wrap">
+          <button type="button" class="btn btn-success mt-4 mx-2">Попасть в другой город</button>  
+          <button type="button" class="btn btn-success mt-4 mx-2">Подарок от партнера</button>
+          <button type="button" class="btn btn-success mt-4 mx-2">Стикеры телеграм</button>
     </div>
+  </div>
+
     <h2 class="text-start px-4 mt-5 fs-1 grayish">Хочешь разблокировать больше наград?</h2>
     <h3 class="text-start px-4 mb-5 fs-1 grayish">Пригласи друзей!</h3>
+
+          <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              А вы знали что каждый день количество пчел во всем мире становится меньше на 120 миллионов? Такими темпами все пчелы исчезнут через 277 лет. Пчелы являются ключевым звеном в опылении растений, фруктов, овощей, то есть их размножении. Без пчел не будет фруктов и овощей, к которым мы привыкли. То есть вообще никаких. Это действительно будет сильнейшее бедствие для нашей планеты. Берегите пчел!
+            </div>
+            <div class="modal-footer">
+              <button id="close-bees" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="bundle.js"></script>
 </body>
 </html>
