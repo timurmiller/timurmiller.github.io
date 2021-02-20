@@ -62,7 +62,6 @@ button:active {
 
 #hover-bees {
     display: none;
-    font-size: calc(16px + 1vw);
     color: white;
     position: absolute;
     top: 40%;
@@ -80,6 +79,7 @@ button:active {
     animation-duration: .5s;
     animation-timing-function: ease-in-out;
 }
+
 
 @keyframes click {
     0% {transform: scale(1);}
@@ -101,15 +101,16 @@ button:active {
 
 
 .tiktok-icon-block {
-    width: calc(12px + 3vw);
+    width: calc(12px + 2.5vw);
     position: absolute;
     right: -1px;
     top: -1px;
 }
 
 .block-text {
-    font-size: 100%;
-    width: 90%;
+    font-size: calc(12px + 1.5vw)!important;
+    width: 95%;
+    text-align: center;
     position: relative;
     left: 50%;
     top: 30%;
@@ -118,13 +119,31 @@ button:active {
 
 .emoji {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.emoji span {
-    font-size: calc(16px + 1vw);
+.emoji-item {
+    font-size: calc(12px + 3vw);
     padding: 5px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+    .block-text {
+      font-size: calc(12px + 4vw)!important; 
+    }
+    .emoji-item {
+      font-size: calc(12px + 6.5vw)!important;
+    }
+    .tiktok-icon-block {
+      width: calc(12px + 6vw)!important;
+    }
+  }
+
+
+
+.modal {
+    font-family: verdana !important;
 }

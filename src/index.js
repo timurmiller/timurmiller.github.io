@@ -51,17 +51,21 @@ const Share = {
 document.getElementById('vk').addEventListener('click', Share.vkontakte)
 
 window.onload = function() {
-    let link = 'https://storage.googleapis.com/sonyland/projector2021/uploads/image/file/1/final.jpg'
-    let http = new XMLHttpRequest();
-
-    http.onreadystatechange = function() {
-        if (http.status == 200 && http.readyState == 4) {
-            console.log(http.response)
-        }
-    }
-
-    http.open('GET', link, true);
-    http.send();
+	let link = 'https://storage.googleapis.com/sonyland/projector2021/uploads/image/file/1/final.jpg'
+    fetch(link, {
+		method: 'GET',
+		mode: 'cors',
+		headers: {
+			'Access-Control-Allow-Origin': '*'
+			// 'Content-Type': 'application/x-www-form-urlencoded',
+		  },
+	})
+	.then((response) => {
+		return response.json()
+	}).then((data) => {
+		console.log(data)
+	})
+	.catch((error) => {
+		console.log(error)
+	});
 }
-
-
