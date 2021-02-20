@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Code-Pro';
+    src: url('./code_pro.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Code-Pro', sans-serif !important;;
+}
+
+.header-text-main {
+    font-size: calc(12px + 5vw) !important;
+}
+
+.header-text-sub {
+    font-size: calc(12px + 1.0vw) !important;
+}
+
+
+
+.icon-link {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card {
+    margin-bottom: 24px;
+    transition: all .2s ease-in-out;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    border-radius: 0px !important;
+    background-color: rgb(0, 151, 0) !important;
+    box-shadow: 5px 5px 0px 0px rgb(154, 212, 156);
+    max-width: 300px !important;
+    transition: all 1s ease-in;
+}
+button:active {
+    box-shadow: 0 0 0 0;
+    transform: scale(0.99);
+}
+
+.grayish {
+    color: rgb(106, 136, 153) !important;
+}
+
+.hidden {
+    color: white;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    visibility: visible;
+}
+
+
+#hover-bees {
+    display: none;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#block-2:hover #hover-bees {
+    display: block;
+}
+
+
+.block:active {
+    animation-name: click;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes click {
+    0% {transform: scale(1);}
+    30% {transform: scale(.9);}
+    70% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.white-box {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: calc(.25rem - 1px);
+}
+
+
+.tiktok-icon-block {
+    width: calc(12px + 2.5vw);
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+
+.block-text {
+    font-size: calc(12px + 1.5vw)!important;
+    width: 95%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.emoji {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emoji-item {
+    font-size: calc(12px + 3vw);
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+    .block-text {
+      font-size: calc(12px + 4vw)!important; 
+    }
+    .emoji-item {
+      font-size: calc(12px + 6.5vw)!important;
+    }
+    .tiktok-icon-block {
+      width: calc(12px + 6vw)!important;
+    }
+  }
+
+
+
+.modal {
+    font-family: verdana !important;
+}
