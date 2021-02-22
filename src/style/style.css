@@ -60,16 +60,17 @@ button:active {
 }
 
 
-#hover-bees {
+#block-1-hover, #block-2-hover, #block-3-hover, #block-4-hover, #block-5-hover, #block-6-hover {
     display: none;
     color: white;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#block-2:hover #hover-bees {
+#block-1:hover #block-1-hover, #block-2:hover #block-2-hover, #block-3:hover #block-3-hover,
+#block-4:hover #block-4-hover, #block-5:hover #block-5-hover, #block-6:hover #block-6-hover {
     display: block;
 }
 
@@ -88,7 +89,7 @@ button:active {
     100% {transform: scale(1);}
 }
 
-.white-box {
+.white-box-1, .white-box-2, .white-box-3, .white-box-4, .white-box-5, .white-box-6 {
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -99,13 +100,6 @@ button:active {
     border-radius: calc(.25rem - 1px);
 }
 
-
-.tiktok-icon-block {
-    width: calc(12px + 2.5vw);
-    position: absolute;
-    right: -1px;
-    top: -1px;
-}
 
 .block-text {
     font-size: calc(12px + 1.5vw)!important;
@@ -122,12 +116,19 @@ button:active {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
 }
 
 .emoji-item {
     font-size: calc(12px + 3vw);
     padding: 5px;
     cursor: pointer;
+    margin: 0 5px;
+}
+
+.elon-greta-putin {
+    width: calc(12px + 8vw) !important;
 }
 
 @media only screen and (max-width: 575px) {
@@ -137,10 +138,19 @@ button:active {
     .emoji-item {
       font-size: calc(12px + 6.5vw)!important;
     }
-    .tiktok-icon-block {
-      width: calc(12px + 6vw)!important;
+    #block-1-hover, #block-2-hover, #block-3-hover, #block-4-hover, #block-5-hover, #block-6-hover {
+        font-size: calc(12px + 6vw)!important;
     }
-  }
+    .elon-greta-putin {
+        width: calc(12px + 20vw) !important;
+    }
+}
+@media only screen and (min-width: 1185px) {
+    .elon-greta-putin {
+        width: calc(12px + 7vw) !important;
+    }
+}
+
 
 
 
